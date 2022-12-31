@@ -1,2 +1,6 @@
-let response = $.ajax('http://www.boredapi.com/api/activity');
-console.log(response);
+$.ajax('http://www.boredapi.com/api/activity',
+    {
+        success: function (APIResponse) {
+            console.log(APIResponse);
+        }
+    })
